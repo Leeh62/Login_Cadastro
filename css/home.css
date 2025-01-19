@@ -41,6 +41,17 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    margin-top: 18px;
 }
 
 ul{
@@ -49,23 +60,62 @@ ul{
 }
 
 ul li{
-    margin-left: 50px;
     text-align: center;
+    width: 120px;
+    display: flex;
+    height: 55px;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 184px;
-    width: 200px;
+.cadastro{
+    margin-right: 20px;
+}
+
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+nav a:hover::after{
+    width: 100%;
 }
 
 a:hover{
-    color:rgb(202, 182, 194);
+    color: rgb(243, 236, 236);
 }
 
-a:active{
-    color:rgb(192, 139, 171);
+.sobre{
+    background-color: rgb(15, 15, 15, 0.4);
+    margin-top: 15px;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
 }
 
+h3{
+    color: white;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.texto p{
+    margin-left: 20px;
+    text-indent: 25px;
+    cursor: default;
+    margin-bottom: 20px;
+}
+
+.imagem-gato img{
+    height: 140px;
+    border-radius: 30px;
+    padding: 28px;
+    margin-right: 13px;
+}
