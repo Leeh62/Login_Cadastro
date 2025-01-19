@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, powderblue, rgb(199, 21, 133));
+    height: 100vh;
+    font-size: 14px;
+}
+
+.formulário{
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 100px 95px;
+    border-radius: 15px;
+    width: 280px;
+    height: 57%;
+}
+
+h2{
+    margin-top: -10px;
+    margin-bottom: 40px;
+    font-weight: 900;
+    text-align: center;
+    cursor: default;
+    white-space: nowrap;
+    font-size: 30px;
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-usuário{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(129, 129, 129);
+    outline: none;
+    color: white;
+    padding: 1px;
+    font-size: 16px;
+    width: 280px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 22px;
+    height: 27px;
+    margin-top: 2px;
+
+}
+
+.label-input{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    font-size: 18px;
+}
+
+.input-usuário:focus ~ .label-input, .input-usuário:valid ~ .label-input{
+    top: -15px;
+    font-size: 15px;
+    color: powderblue;
+}
+
+.gênero{
+    margin-top: -5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.input-gênero{
+    margin-bottom: 2px;
+    font-size: 17px;
+}
+
+.box-data{
+    margin-top: 13px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.input-data{
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    padding: 3px;
+    height: 23px;
+    margin-left: 6px;
+    margin-top: -3px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: -2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(180, 83, 146);
+    transition: background-color 0.5s ease;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #af0772; 
+    transition: background-color 0.5s ease;
+}
+
+button:active{
+    background-color: #4d0532; 
+    transition: background-color 0.2s ease;
+} 
