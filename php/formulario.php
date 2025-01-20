@@ -9,10 +9,11 @@
         $telefone = $_POST['telefone'];
         $sexo = $_POST['genero'];
         $data_nascimento = $_POST['data-nasc'];
+        $senha = $_POST['senha'];
 
         mysqli_select_db($conexao, 'cadastro');
 
-        $result = mysqli_query($conexao, "INSERT INTO usuario(nome_completo, email, telefone, sexo, data_nascimento) VALUES ('$nome', '$email', '$telefone', '$sexo', '$data_nascimento')");
+        $result = mysqli_query($conexao, "INSERT INTO usuario(nome_completo, email, telefone, sexo, data_nascimento, senha) VALUES ('$nome', '$email', '$telefone', '$sexo', '$data_nascimento', 'senha')");
     }
          
 ?>
@@ -27,6 +28,8 @@
 </head>
 <body>
     <form action="formulario.php" method="POST" class="formulário">
+
+        <a href="index.php" class="voltar"><img src="\Login_Cadastro\img\desfazer.png" alt="voltar"></a>
         <h2>Cadastre-se</h2>
 
         <div class="input-box">
@@ -64,6 +67,11 @@
         <div class="box-data">
             <label for="data-nasc" class="label-data">Data de nascimento:</label>
             <input type="date" name="data-nasc" id="data-nasc" class="input-data" required>
+        </div>
+
+        <div class="input-box">
+            <input type="text" name="senha" id="senha" class="input-usuário" required>
+            <label class="label-input">Senha</label>
         </div>
 
         <button type="submit" name="submit" id="submit">Cadastrar</button>

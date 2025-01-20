@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="\Login_Cadastro\css\home.css">
-    <title>Tela principal</title>
+    <link rel="stylesheet" href="\Login_Cadastro\css\home.css?v=<?php echo time(); ?>">
+    <link rel="icon" href="\Login_Cadastro\img\gatinha.png" type="image">
+    <title>Miau Center</title>
     
 </head>
 <body>
     <header>
         <div class="cabeçalho">
-            <img src="\Login_Cadastro\img\kitty (5).png" alt="logo" class="logo">
+            <img src="\Login_Cadastro\img\gatinha (2).png" alt="logo" class="logo">
             <p class="titulo-logo">Miau Center</p>
         </div>
 
         <nav>
             <ul>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Entrar</a></li>
-                <li><a href="#" class="cadastro">Cadastre-se</a></li>
+                <li><a href="#" class="quem-somos">Quem Somos</a></li>
+                <li><a href="login.php">Entrar</a></li>
+                <li><a href="formulario.php" class="cadastro">Cadastre-se</a></li>
             </ul>
         </nav>
     </header>
