@@ -98,7 +98,7 @@ h2{
     margin-left: 6px;
     margin-top: -3px;
 }
-button{
+.cadastrar{
     width: 100%;
     padding: 10px;
     border: none;
@@ -111,12 +111,12 @@ button{
     font-size: 16px;
 }
 
-button:hover{
+.cadastrar:hover{
     background-color: #af0772; 
     transition: background-color 0.5s ease;
 }
 
-button:active{
+.cadastrar:active{
     background-color: #4d0532; 
     transition: background-color 0.2s ease;
 } 

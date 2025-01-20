@@ -13,6 +13,6 @@
     }
     else
     {
-        echo 'Conexão efetuada com sucesso.';
+        echo '';
     }
 ?>

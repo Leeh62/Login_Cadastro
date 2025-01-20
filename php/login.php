@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="\Login_Cadastro\css\login.css?v=<?php echo time(); ?>">
+    <link rel="icon" href="\Login_Cadastro\img\gatinha.png" type="image">
     <title>Login</title>
 </head>
 
 <body>
-    <form action="login.php" method="POST">
+    <form action="testeLogin.php" method="POST">
     <div class="dados-login">
 
         <a href="index.php" class="voltar"><img src="\Login_Cadastro\img\desfazer.png" alt="voltar"></a>

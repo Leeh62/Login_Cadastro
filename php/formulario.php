@@ -13,7 +13,7 @@
 
         mysqli_select_db($conexao, 'cadastro');
 
-        $result = mysqli_query($conexao, "INSERT INTO usuario(nome_completo, email, telefone, sexo, data_nascimento, senha) VALUES ('$nome', '$email', '$telefone', '$sexo', '$data_nascimento', 'senha')");
+        $result = mysqli_query($conexao, "INSERT INTO usuario(nome_completo, email, telefone, sexo, data_nascimento, senha) VALUES ('$nome', '$email', '$telefone', '$sexo', '$data_nascimento', '$senha')");
     }
          
 ?>
@@ -24,6 +24,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="\Login_Cadastro\css\formulario.css?v=<?php echo time(); ?>">
+    <link rel="icon" href="\Login_Cadastro\img\gatinha.png" type="image">
     <title>Cadastro</title>
 </head>
 <body>
@@ -70,11 +71,11 @@
         </div>
 
         <div class="input-box">
-            <input type="text" name="senha" id="senha" class="input-usuário" required>
+            <input type="password" name="senha" id="senha" class="input-usuário" required>
             <label class="label-input">Senha</label>
         </div>
 
-        <button type="submit" name="submit" id="submit">Cadastrar</button>
+        <input type="submit" name="submit" id="submit" class="cadastrar">
 
     </form>
 </body>
