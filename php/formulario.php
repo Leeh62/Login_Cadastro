@@ -7,13 +7,14 @@
         $nome = $_POST['nome'];
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
-        $sexo = $_POST['genero'];
-        $data_nascimento = $_POST['data-nasc'];
+g        $data_nascimento = $_POST['data-nasc'];
         $senha = $_POST['senha'];
 
         mysqli_select_db($conexao, 'cadastro');
 
         $result = mysqli_query($conexao, "INSERT INTO usuario(nome_completo, email, telefone, sexo, data_nascimento, senha) VALUES ('$nome', '$email', '$telefone', '$sexo', '$data_nascimento', '$senha')");
+        
+        header('Location: login.php');
     }
          
 ?>
